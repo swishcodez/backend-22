@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>AIMLAB by swish</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Game</h1>
+      <h1>Score:<span id="score">0</span> Timer: <span id="time">5</span></h1>
+      <div id="gamebox" class="gamebox">
+        <div class="box red" id="movebox" onclick="hide(this)"></div>
+      </div>
+    </div>
+  </body>
+  <script src="home.js"></script>
+  <script>
+      var name = prompt("What's your name?");
+ 
+    if(name.length > 0 && name != "null") {
+         document.write("Congrats!, " + name);
+    } else {
+         document.write("Anonymous!");
+ }
+  </script>
+</html>
